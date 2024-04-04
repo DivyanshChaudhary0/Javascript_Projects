@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="country.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+    <div id="main">
+        <header class="header">
+        <h2><a href="/Country_Api_Project/">Where in the World?</a></h2>
+        <p><i class="ri-moon-line"></i> Dark Mode</p>
+        </header>
+        <a href="#" class="backButton" onclick="history.back()"> <i class="ri-arrow-left-line"></i> Back</a>
+        <div class="country-details-card">
+            <div class="left">
+                <div class="imageDiv">
+                    <img src="" alt="">
+                </div>
+            </div>
+            <div class="right">
+                <h2 class="country-name"></h2>
+                <div class="country-details">
+                    <div class="dets-left">
+                        <p><b>Native Name: </b> <span class="native-name"></span> </p>
+                        <p><b>Population: </b> <span class="population"></span> </p>
+                        <p><b>Region: </b> <span class="region"></span> </p>
+                        <p><b>Sub Region: </b> <span class="subRegion"></span> </p>
+                        <p><b>Capital: </b> <span class="capital"></span> </p>
+                    </div>
+                    <div class="dets-right">
+                        <p><b>Top Level Domain: </b> <span class="tlp"></span> </p>
+                        <p><b>Currencies: </b> <span class="currency"></span> </p>
+                        <p><b>Languages: </b> <span class="languages"></span> </p>
+                    </div>
+                </div>
+                <div class="border-countries">
+                    <b>Border Countries: </b>
+                    <!-- <a href="#">China</a>
+                    <a href="">Nepal</a>
+                    <a href="">Bhutan</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./country.js"></script>
+</body>
+</html>
