@@ -33,7 +33,7 @@ body.dark{
 }
 main{
     width: 100%;
-    height: auto;
+    min-height: calc(100% - 70px);
     padding: 50px 64px;
     background-color: var(--elements-color);
     color: var(--text-color);
@@ -105,7 +105,11 @@ main{
     overflow: hidden;
     text-decoration: none;
     color: inherit;
+    transition: transform .2s ease-in;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.card-container:hover{
+    transform: scale(1.02);
 }
 .card-container img{
     width: 100%;
