@@ -1,5 +1,12 @@
 let countriesContainer = document.querySelector(".countries-container");
 let allCountriesData = " ";
+const darkMode = document.querySelector(".darkMode");
+
+darkMode.addEventListener("click",function(e){
+    e.preventDefault();
+    document.querySelector("body").classList.toggle("dark");
+})
+
 
 let showCountryData = (data) => {
     // console.log(data);
