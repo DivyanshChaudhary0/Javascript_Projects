@@ -7,10 +7,19 @@
 body,html{
     width: 100%;
     height: 100%;
+    --background-color: white;
+    --text-color: black;
+    --elements-color: white;
+}
+body.dark{
+    --background-color: hsl(207,26%,17%);
+    --text-color: white;
+    --elements-color: hsl(209,23%,22%);
 }
 #main{
     width: 100%;
     height: 100%;
+    background-color: var(--elements-color);
 }
 .header{
     width: 100%;
@@ -21,6 +30,8 @@ body,html{
     padding: 0px 64px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     /* background-color: red; */
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 .header h2 a{
     text-decoration: none;
@@ -35,6 +46,8 @@ body,html{
     padding: 8px 18px;
     border: 1px solid grey;
     border-radius: 8px;
+    background-color: var(--elements-color);
+    color: var(--text-color);
 }
 .backButton:active{
     top: 14.5%;
@@ -47,12 +60,16 @@ body,html{
     justify-content: center;
     gap: 52px;
     padding: 0px 64px;
+    background-color: var(--elements-color);
+    color: var(--text-color);
 }
 .left{
     width: 45%;
     height: 100%;
     display: flex;
     align-items: center;
+    background-color: var(--elements-color);
+    color: var(--text-color);
 }
 .left .imageDiv{
     width: 100%;
@@ -77,6 +94,8 @@ body,html{
     justify-content: center;
     padding: 0px 15px;
     /* align-items: center; */
+    background-color: var(--elements-color);
+    color: var(--text-color);
 }
 .right h2{
     font-size: 34px;
@@ -104,6 +123,7 @@ body,html{
     border: 1px solid grey;
     border-radius: 4px;
     letter-spacing: 1.5px;
+    color: var(--text-color);
 }
 
 @media(min-width:350px) and (max-width:670px){

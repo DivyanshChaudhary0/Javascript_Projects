@@ -83,7 +83,8 @@ main{
     border: 0;
     outline: 0;
     background-color: inherit;
-    color: white;
+    /* color: white; */
+    color: var(--text-color);
 }
 .countries-container{
     width: 100%;

@@ -12,6 +12,12 @@ let topLevelDomain = document.querySelector(".tlp");
 let currency = document.querySelector(".currency");
 let languages = document.querySelector(".languages");
 let borderCountries = document.querySelector(".border-countries");
+const darkMode = document.querySelector(".darkMode");
+
+darkMode.addEventListener("click",function(e){
+    e.preventDefault();
+    document.querySelector("body").classList.toggle("dark");
+})
 
 fetch(`https://restcountries.com/v3.1/name/${countryName}?fullText=true`)
 .then((res)=>res.json())
