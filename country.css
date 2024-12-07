@@ -54,7 +54,7 @@ body.dark{
 }
 .country-details-card{
     width: 100%;
-    height: calc(100% - 70px);
+    min-height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
